@@ -18,4 +18,4 @@ javac -cp $($HADOOP_HOME/bin/hadoop classpath) -d ./$HADOOP_APP_DIR/ $HADOOP_APP
 
 jar -cf ./$HADOOP_APP_DIR/$HADOOP_APP_NAME.jar ./$HADOOP_APP_DIR/*.class
 #Delete redundant class files
-find -type f -name $HADOOP_APP_DIR/*.class -delete
+find $HADOOP_APP_DIR/ -type f -name *.class -delete
